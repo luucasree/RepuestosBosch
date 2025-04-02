@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opticas</title>
     <style>
-    
        body {
             font-family: Arial, sans-serif;
             background: linear-gradient(to right, #02006b, #000000);
@@ -16,6 +15,7 @@
         }
         .container {
             display: flex;
+            flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
@@ -50,7 +50,7 @@
             margin: 10px 0;
             font-weight: bold;
         }
-        .buy-button {
+        .buy-button, .volver-inicio {
             display: inline-block;
             padding: 12px 18px;
             background: #ffcc00;
@@ -59,8 +59,9 @@
             border-radius: 8px;
             font-weight: bold;
             transition: background 0.3s, transform 0.2s;
+            margin-top: 15px; /* Espacio superior */
         }
-        .buy-button:hover {
+        .buy-button:hover, .volver-inicio:hover {
             background: #ff9900;
             transform: scale(1.1);
         }
@@ -70,17 +71,20 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
     </style>
-   
 </head>
 <body>
     <h1>Opticas</h1>
     <div class="container">
         <div class="product">
             Optica 133/128 Europa Izq/der
-            <img src="https://raw.githubusercontent.com/luucasree/RepuestosBosch/main/imagen13.png" alt="Optica 133/128 Europa Izq/der         ">
+            <img src="https://raw.githubusercontent.com/luucasree/RepuestosBosch/main/imagen13.png" alt="Optica 133/128 Europa Izq/der">
             <p class="precio">$20.000</p>
-            <a href="https://www.mercadolibre.com.ar/optica-133128-europa-izqder/up/MLAU3072839558?pdp_filters=item_id:MLA2031316816" class="buy-button">Ver publicacion</a>
+            <a href="https://www.mercadolibre.com.ar/optica-133128-europa-izqder/up/MLAU3072839558?pdp_filters=item_id:MLA2031316816" class="buy-button">Ver publicación</a>
         </div>
+        
+        <!-- Botón de volver a inicio -->
+        <a href="index.html" class="volver-inicio">Volver a inicio</a>
     </div>
 </body>
 </html>
+
