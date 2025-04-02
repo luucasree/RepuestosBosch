@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bisagras</title>
     <style>
-      body {
+        body {
             font-family: Arial, sans-serif;
             background: linear-gradient(to right, #02006b, #000000);
             color: white;
@@ -15,7 +15,7 @@
         }
         .container {
             display: flex;
-            flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
@@ -49,7 +49,7 @@
             margin: 10px 0;
             font-weight: bold;
         }
-        .buy-button, .volver-inicio {
+        .buy-button {
             display: inline-block;
             padding: 12px 18px;
             background: #ffcc00;
@@ -58,9 +58,9 @@
             border-radius: 8px;
             font-weight: bold;
             transition: background 0.3s, transform 0.2s;
-            margin-top: 15px; /* Espacio superior */
+            margin-top: 15px;
         }
-        .buy-button:hover, .volver-inicio:hover {
+        .buy-button:hover {
             background: #ff9900;
             transform: scale(1.1);
         }
@@ -69,6 +69,22 @@
             font-size: 2.5em;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
+        /* Estilos específicos para el botón de volver al inicio */
+        .volver-inicio {
+            display: inline-block;
+            margin-top: 30px; /* Espacio entre el producto y el botón */
+            padding: 12px 18px;
+            background: #ffcc00;
+            color: #000;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .volver-inicio:hover {
+            background: #ff9900;
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
@@ -76,12 +92,12 @@
     <div class="container">
         <div class="product">
             <h2>Kit De Bisagras Gapot Partner Der/izq</h2>
-            <img src="https://raw.githubusercontent.com/luucasree/RepuestosBosch/main/imagen2.png" alt="Kit De Bisagras Gapot Partner Der/izq">
+            <img src="c:\Users\Lucas\Desktop\autos\imagen2.png" alt="Kit De Bisagras Gapot Partner Der/izq">
             <p class="precio">$25.000</p>
             <a href="https://www.mercadolibre.com.ar/kit-de-bisagras-gapot-partner-derizq/up/MLAU3085518666" class="buy-button">Ver publicación</a>
         </div>
     </div>
-    <!-- Botón afuera del recuadro blanco pero centrado -->
+    <!-- Botón afuera del recuadro blanco y centrado -->
     <a href="index.html" class="volver-inicio">Volver a inicio</a>
 </body>
 </html>
