@@ -4,64 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crapodinas</title>
-    <style>
+      <style>
+    
        body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background: linear-gradient(to right, #02006b, #000000);
+            color: white;
             text-align: center;
             margin: 0;
             padding: 0;
         }
         .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
             padding: 20px;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr); /* 4 columnas por fila */
-            gap: 20px; /* Espacio entre productos */
-            justify-items: center;
         }
         .product {
             background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin: 15px;
-            padding: 15px;
-            width: 250px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            margin: 20px;
+            padding: 20px;
+            width: 280px;
             text-align: center;
+            transition: transform 0.3s;
             color:black;
         }
+        .product:hover {
+            transform: scale(1.05);
+        }
         .product img {
-            width: 100%; /* Ajusta al ancho del contenedor */
-            height: 250px; /* Altura fija para todas las imágenes */
-            border-radius: 5px;
-            object-fit: contain; /* Evita que se recorte, mostrando todo el contenido */
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: contain;
             display: block;
             margin: auto;
-
+            background: #f4f4f4;
         }
         .precio {
-            font-size: 1.2em;
-            color: #000000;
+            font-size: 1.5em;
+            color: #02006b;
             margin: 10px 0;
-            width: 100%; /* Ajusta al ancho del grid */
-            max-width: 250px; /* Tamaño máximo por tarjeta */
+            font-weight: bold;
         }
         .buy-button {
             display: inline-block;
-            padding: 10px 15px;
-            background-color: #02006b;
-            color: white;
+            padding: 12px 18px;
+            background: #ffcc00;
+            color: #000;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 8px;
             font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
         }
         .buy-button:hover {
-            background-color: #000000;
+            background: #ff9900;
+            transform: scale(1.1);
+        }
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
     </style>
 </head>
 <body>
-    <h1>Kits</h1>
+    <h1>Crapodinas</h1>
     <div class="container">
         <div class="product">
             Crapodina Embrague Hidraulico Original Thp-ep6
