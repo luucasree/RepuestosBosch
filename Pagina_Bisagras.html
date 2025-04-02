@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bisagras</title>
     <style>
-        body {
+       body {
             font-family: Arial, sans-serif;
             background: linear-gradient(to right, #02006b, #000000);
             color: white;
@@ -15,7 +15,7 @@
         }
         .container {
             display: flex;
-            flex-direction: column;
+            flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
@@ -30,7 +30,7 @@
             width: 280px;
             text-align: center;
             transition: transform 0.3s;
-            color: black;
+            color:black;
         }
         .product:hover {
             transform: scale(1.05);
@@ -50,7 +50,7 @@
             margin: 10px 0;
             font-weight: bold;
         }
-        .buy-button {
+        .buy-button, .volver-inicio {
             display: inline-block;
             padding: 12px 18px;
             background: #ffcc00;
@@ -59,9 +59,9 @@
             border-radius: 8px;
             font-weight: bold;
             transition: background 0.3s, transform 0.2s;
-            margin-top: 15px;
+            margin-top: 15px; /* Espacio superior */
         }
-        .buy-button:hover {
+        .buy-button:hover, .volver-inicio:hover {
             background: #ff9900;
             transform: scale(1.1);
         }
@@ -69,22 +69,6 @@
             margin-top: 20px;
             font-size: 2.5em;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        /* Estilos específicos para el botón de volver al inicio */
-        .volver-inicio {
-            display: inline-block;
-            margin-top: 30px; /* Espacio entre el producto y el botón */
-            padding: 12px 18px;
-            background: #ffcc00;
-            color: #000;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            transition: background 0.3s, transform 0.2s;
-        }
-        .volver-inicio:hover {
-            background: #ff9900;
-            transform: scale(1.1);
         }
     </style>
 </head>
