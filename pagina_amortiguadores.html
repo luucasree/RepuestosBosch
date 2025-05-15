@@ -14,22 +14,25 @@
              padding: 0;
          }
          .container {
-             display: flex;
-             flex-wrap: wrap;
-             justify-content: center;
-             padding: 20px;
-         }
-         .product {
-             background: white;
-             border-radius: 15px;
-             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-             margin: 20px;
-             padding: 20px;
-             width: 280px;
-             text-align: center;
-             transition: transform 0.3s;
-             color:black;
-         }
+    display: flex;
+    flex-wrap: nowrap; /* No permite que se vayan abajo */
+    justify-content: center;
+    gap: 40px; /* Espacio entre productos */
+    padding: 20px;
+    overflow-x: auto; /* Opcional para que se desplace horizontalmente en pantallas chicas */
+}
+
+.product {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s;
+    color: black;
+    flex-shrink: 0; /* Evita que se encojan en pantallas pequeñas */
+}
          .product:hover {
              transform: scale(1.05);
          }
@@ -89,6 +92,7 @@
 </head>
 <body>
     <h1>Amortiguadores</h1>
+    <div class="container">
         <div class="product">
             Juego De Amortiguadores Der/izq Delantero Partner 5202tg
             <img src="https://raw.githubusercontent.com/luucasree/RepuestosBosch/main/imagen14.png" alt="Juego De Amortiguadores Der/izq Delantero Partner 5202tg">
